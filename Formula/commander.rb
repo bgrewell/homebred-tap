@@ -13,7 +13,7 @@ class Commander < Formula
       sha256 "a44789c4e470d659fc088b0451d09126f651ebf30ad300fac4916cf86f4e2091"
 
       def install
-        bin.install "commander"
+        bin.install "bin/commander"
       end
     end
     on_arm do
@@ -21,7 +21,7 @@ class Commander < Formula
       sha256 "17d901d08dd7efac40d402a872b0be50fde8398330284cf6e8bb4b8e74007e32"
 
       def install
-        bin.install "commander"
+        bin.install "bin/commander"
       end
     end
   end
@@ -33,7 +33,7 @@ class Commander < Formula
         sha256 "92fea4db05940b61067154a36eb91d701a0f1f5fdaf83059e0684095878699fd"
 
         def install
-          bin.install "commander"
+          bin.install "bin/commander"
         end
       end
     end
@@ -43,7 +43,7 @@ class Commander < Formula
         sha256 "1860212b3c1fb049e27e3c681b911ac4082210f3f7c9c630a68cdf679ddae307"
 
         def install
-          bin.install "commander"
+          bin.install "bin/commander"
         end
       end
     end
