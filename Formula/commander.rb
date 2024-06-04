@@ -9,7 +9,7 @@ class Commander < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_darwin_amd64.tar.gz"
+      url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "a44789c4e470d659fc088b0451d09126f651ebf30ad300fac4916cf86f4e2091"
 
       def install
@@ -17,7 +17,7 @@ class Commander < Formula
       end
     end
     on_arm do
-      url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_darwin_arm64.tar.gz"
+      url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "17d901d08dd7efac40d402a872b0be50fde8398330284cf6e8bb4b8e74007e32"
 
       def install
@@ -29,7 +29,7 @@ class Commander < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_linux_amd64.tar.gz"
+        url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
         sha256 "92fea4db05940b61067154a36eb91d701a0f1f5fdaf83059e0684095878699fd"
 
         def install
@@ -39,7 +39,7 @@ class Commander < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_linux_armv6.tar.gz"
+        url "https://github.com/bgrewell/commander/releases/download/0.4.1/commander_0.4.1_linux_armv6.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
         sha256 "1860212b3c1fb049e27e3c681b911ac4082210f3f7c9c630a68cdf679ddae307"
 
         def install
